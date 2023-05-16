@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Title</title>
+        <title>Форма для додавання викладача</title>
         <meta charset="utf-8"/>
+
+        <style>
+            body {
+              background-color: burlywood;
+            }
+        </style>
     </head>
 
     <body>
-        <h1>Header</h1>
-        <p>Hello world</p>
+        <form>
+        <h3>
+            <label>Прізвище:</label>
+            <input type="text"/>
+            <br/>
+            <label>Ім'я:</label>
+            <input type="text"/>
+            <br/>
+            <label>По батькові:</label>
+            <input type="text"/>
+            <br/>
+
+            <label>Стать:</label>
+            <select>
+                <option>Чоловік</option>
+                <option>Жінка</option>
+                <option>Інше</option>
+            </select>
+            <br/>
+
+            <label>Дата народження:</label>
+            <input type="date"/>
+            <br/>
+
+            <label>Пошта:</label>
+            <input type="email" placeholder="x@x.x"/>
+            <br/>
+
+            <label>Телефон:</label>
+            <input type="tel" name="phone"/>
+            <br/>
+
+            <label>Бажаний колір фону:</label>
+            <input type="color"/>
+            <br/>
+
+            <label>Країна:</label>
+            <input type="text"/>
+            <br/>
+
+            <label>Місто:</label>
+            <input type="text"/>
+            <br/>
+
+            <label>Коментар:</label>
+            <br/>
+            <textarea cols="40" rows="4" placeholder="Введіть тут свій коментар..."></textarea>
+            <br/>
+
+            <input type="submit" value="Підтвердити">
+            <input type="reset" value="Скасувати">
+        </h3>
+        </form>
     </body>
 </html>
